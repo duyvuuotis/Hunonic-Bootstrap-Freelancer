@@ -1,0 +1,86 @@
+/* Dịch vụ Box */
+.service-box {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-10px); /* Hình ảnh nổi lên khi hover */
+}
+
+/* Hiệu ứng cho ảnh */
+.service-img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-box:hover .service-img {
+    transform: scale(1.05); /* Tăng kích thước ảnh khi hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Thêm bóng đổ */
+}
+
+
+/* Hiệu ứng cho icon */
+/* Hiệu ứng cho icon */
+.service-box .icon {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.service-box:hover .icon {
+    animation: blink 1s infinite;  /* Hiệu ứng nhấp nháy liên tục */
+}
+
+@keyframes blink {
+    0% {
+        transform: scale(1);  /* Kích thước bình thường */
+        opacity: 1;           /* Hiển thị hoàn toàn */
+    }
+    50% {
+        transform: scale(1.2); /* Phóng to một chút */
+        opacity: 0.5;          /* Mờ đi một chút */
+    }
+    100% {
+        transform: scale(1);   /* Quay lại kích thước ban đầu */
+        opacity: 1;            /* Hiển thị lại hoàn toàn */
+    }
+}
+
+/* Thiết lập font chữ đẹp hơn cho class 'lead' */
+.lead {
+    font-family: 'Lora', serif;  /* Hoặc 'Roboto', sans-serif, tùy theo lựa chọn */
+    font-size: 1.1rem;  /* Tăng kích thước chữ một chút */
+    line-height: 1.6;  /* Tăng khoảng cách giữa các dòng để dễ đọc hơn */
+    font-weight: 400;  /* Thiết lập độ đậm cho chữ */
+    color: #333;  /* Màu chữ xám đậm nhẹ nhàng */
+    margin-bottom: 1.5rem;  /* Tạo khoảng cách đều giữa các đoạn văn */
+}
+
+
+.scroll-to-top {
+    position: fixed; /* Đặt nút ở vị trí cố định */
+    bottom: 30px; /* Khoảng cách từ dưới lên */
+    right: 30px; /* Khoảng cách từ phải sang */
+    background-color: #FF885B; /* Màu nền */
+    color: white; /* Màu chữ */
+    border: none; /* Không có đường viền */
+    border-radius: 50%; /* Hình tròn */
+    width: 50px; /* Đường kính */
+    height: 50px; /* Đường kính */
+    display: flex; /* Để căn giữa nội dung */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+    transition: background-color 0.3s, transform 0.3s; /* Hiệu ứng chuyển động */
+}
+
+.scroll-to-top:hover {
+    background-color: #FF6F3C; /* Thay đổi màu khi hover */
+    transform: scale(1.1); /* Tăng kích thước khi hover */
+}
+
+.scroll-to-top i {
+    font-size: 100px; /* Kích thước biểu tượng */
+    margin: 0; /* Đảm bảo không có lề xung quanh biểu tượng */
+}
+

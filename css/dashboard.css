@@ -1,0 +1,77 @@
+.address {
+    white-space: pre-wrap; /* Preserve spaces and line breaks */
+}
+
+.address span {
+    display: block; /* Each line will be displayed as a block */
+}
+
+.header-top, .header-mid {
+    overflow: hidden; /* Prevents overflow */
+}
+
+.nav-links ul {
+    white-space: nowrap; /* Prevents wrapping of nav items */
+}
+
+.contact-info p {
+    margin: 0; /* Reset margin for contact info to prevent wrapping */
+}
+
+.text-end {
+    display: flex; /* Ensures social icons stay in line */
+    align-items: center; /* Aligns icons vertically */
+}
+
+.nav-links a {
+
+    padding: 10px 10px;
+  
+  }
+  @media (min-width: 768px) {
+    .banner-img {
+      height: 900px;
+   
+    }
+  }
+
+  .letter-content {
+    font-size: 1.1rem; /* Adjust font size for readability */
+    line-height: 1.6; /* Adjust line height for better spacing */
+    text-align: justify; /* Justify text for better readability */
+    font-family: 'Times New Roman', Times, serif; /* Change font family */
+}
+
+@media (max-width: 576px) {
+    .letter-content {
+        font-size: 0.9rem; /* Smaller font size on mobile */
+        font-family: 'Times New Roman', Times, serif; /* Change font family */
+    }
+}
+.scroll-to-top {
+    position: fixed; /* Đặt nút ở vị trí cố định */
+    bottom: 30px; /* Khoảng cách từ dưới lên */
+    right: 30px; /* Khoảng cách từ phải sang */
+    background-color: #FF885B; /* Màu nền */
+    color: white; /* Màu chữ */
+    border: none; /* Không có đường viền */
+    border-radius: 50%; /* Hình tròn */
+    width: 50px; /* Đường kính */
+    height: 50px; /* Đường kính */
+    display: flex; /* Để căn giữa nội dung */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+    transition: background-color 0.3s, transform 0.3s; /* Hiệu ứng chuyển động */
+}
+
+.scroll-to-top:hover {
+    background-color: #FF6F3C; /* Thay đổi màu khi hover */
+    transform: scale(1.1); /* Tăng kích thước khi hover */
+}
+
+.scroll-to-top i {
+    font-size: 100px; /* Kích thước biểu tượng */
+    margin: 0; /* Đảm bảo không có lề xung quanh biểu tượng */
+}
+

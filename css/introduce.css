@@ -1,0 +1,117 @@
+.introduction-section {
+  background-color: #f9f9f9; /* Light background color for section */
+  color: #333; /* Text color */
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4B0082; /* Main title color */
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #555; /* Subtitle color */
+}
+
+.section-content {
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: justify; /* Justify text */
+  margin-bottom: 20px;
+}
+
+.facility-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.facility-section h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.facility-gallery {
+  display: flex;
+  flex-direction: column; /* Stack items vertically by default */
+  align-items: center; /* Center items horizontally */
+  gap: 40px; /* Space between items */
+}
+
+.facility-item {
+  max-width: 90%; /* Max width for responsiveness */
+  text-align: center; /* Center align text */
+}
+
+.facility-item img {
+  width: 100%; /* Responsive width */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 400px; /* Limit max width */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.facility-item img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.caption {
+  margin-top: 10px; /* Space above caption */
+}
+
+@media (min-width: 768px) {
+  .facility-gallery {
+      flex-direction: row; /* Change to row direction for larger screens */
+      flex-wrap: wrap; /* Allow wrapping of items */
+      justify-content: center; /* Center items */
+  }
+
+  .facility-item {
+      margin: 20px; /* Space between items in row layout */
+      flex: 0 1 calc(30% - 40px); /* Flex basis for responsive behavior */
+  }
+}
+
+.activity-areas h5 {
+  text-align: center; /* Center align text */
+  color: black; /* Maintain text color */
+  margin-top: 10px; /* Space between image and text */
+}
+
+@media (max-width: 576px) {
+  .activity-areas h5 {
+      font-size: 1rem; /* Smaller font size on mobile */
+  }
+}
+.scroll-to-top {
+  position: fixed; /* Đặt nút ở vị trí cố định */
+  bottom: 30px; /* Khoảng cách từ dưới lên */
+  right: 30px; /* Khoảng cách từ phải sang */
+  background-color: #FF885B; /* Màu nền */
+  color: white; /* Màu chữ */
+  border: none; /* Không có đường viền */
+  border-radius: 50%; /* Hình tròn */
+  width: 50px; /* Đường kính */
+  height: 50px; /* Đường kính */
+  display: flex; /* Để căn giữa nội dung */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+  transition: background-color 0.3s, transform 0.3s; /* Hiệu ứng chuyển động */
+}
+
+.scroll-to-top:hover {
+  background-color: #FF6F3C; /* Thay đổi màu khi hover */
+  transform: scale(1.1); /* Tăng kích thước khi hover */
+}
+
+.scroll-to-top i {
+  font-size: 100px; /* Kích thước biểu tượng */
+  margin: 0; /* Đảm bảo không có lề xung quanh biểu tượng */
+}
+
